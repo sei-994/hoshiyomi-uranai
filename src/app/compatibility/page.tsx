@@ -96,9 +96,9 @@ export default function CompatibilityPage() {
       {/* Hero */}
       <div className="mb-10 text-center">
         <span className="mb-2 inline-block text-4xl">💕</span>
-        <h1 className="text-shimmer mb-2 text-2xl font-bold">相性診断</h1>
+        <h1 className="text-shimmer mb-2 text-2xl font-bold">ふたりの恋愛相性</h1>
         <p className="text-sm text-foreground/50">
-          数秘術で紐解く ── ふたりの運命の相性
+          数秘術で紐解く ── 気になるあの人との恋の相性
         </p>
         <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
       </div>

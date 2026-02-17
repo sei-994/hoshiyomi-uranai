@@ -15,11 +15,11 @@ interface TarotResultProps {
   onReset: () => void;
 }
 
-const positionLabels = ["過去", "現在", "未来"];
+const positionLabels = ["あの人の本音", "今の関係性", "ふたりの未来"];
 const positionDescriptions = [
-  "これまでの流れを表しています",
-  "今のあなたの状況を映しています",
-  "これから訪れる可能性を示しています",
+  "あの人が心の奥で感じていること",
+  "今のふたりの距離感・関係性を映しています",
+  "このまま進んだ先に待つ恋の展開",
 ];
 
 export default function TarotResult({ cards, onReset }: TarotResultProps) {
@@ -31,7 +31,7 @@ export default function TarotResult({ cards, onReset }: TarotResultProps) {
           `${positionLabels[i]}: ${c.card.nameJa}(${c.isReversed ? "逆" : "正"})`,
       )
       .join("\n") +
-    `\n\n星詠み占いで占ってみよう！`;
+    `\n\n恋愛占いラボで占ってみよう！`;
 
   return (
     <div className="mx-auto max-w-2xl px-4">
@@ -118,7 +118,7 @@ export default function TarotResult({ cards, onReset }: TarotResultProps) {
         </h3>
         <p className="text-center text-sm leading-relaxed text-foreground/80">
           {cards.length === 3
-            ? `過去の「${cards[0].card.nameJa}」から現在の「${cards[1].card.nameJa}」を経て、未来には「${cards[2].card.nameJa}」が待っています。${cards[2].card.advice}`
+            ? `あの人の本音は「${cards[0].card.nameJa}」、今のふたりの関係は「${cards[1].card.nameJa}」、そしてふたりの未来には「${cards[2].card.nameJa}」が待っています。${cards[2].card.advice}`
             : cards.map((c) => c.card.advice).join(" ")}
         </p>
       </div>

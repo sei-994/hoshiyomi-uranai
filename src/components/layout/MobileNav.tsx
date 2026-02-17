@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/tarot", label: "タロット", icon: "🃏" },
-  { href: "/daily", label: "今日の運勢", icon: "⭐" },
-  { href: "/numerology", label: "数秘術", icon: "🔢" },
+  { href: "/tarot", label: "あの人", icon: "🃏" },
+  { href: "/daily", label: "恋愛運", icon: "💗" },
+  { href: "/numerology", label: "恋愛タイプ", icon: "💫" },
   { href: "/compatibility", label: "相性", icon: "💕" },
 ];
 

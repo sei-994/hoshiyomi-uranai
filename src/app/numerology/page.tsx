@@ -27,10 +27,10 @@ export default function NumerologyPage() {
     <div className="pt-20 pb-24">
       {/* Hero */}
       <div className="mb-10 text-center">
-        <span className="mb-2 inline-block text-4xl">🔢</span>
-        <h1 className="text-shimmer mb-2 text-2xl font-bold">数秘術</h1>
+        <span className="mb-2 inline-block text-4xl">💫</span>
+        <h1 className="text-shimmer mb-2 text-2xl font-bold">恋愛タイプ診断</h1>
         <p className="text-sm text-foreground/50">
-          生年月日から導く ── あなたのライフパスナンバー
+          生年月日から導く ── あなたの恋愛パターンと理想の相手
         </p>
         <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
       </div>

@@ -20,10 +20,10 @@ export default function DailyPage() {
     <div className="pt-20 pb-24">
       {/* Hero */}
       <div className="mb-10 text-center">
-        <span className="mb-2 inline-block text-4xl">⭐</span>
-        <h1 className="text-shimmer mb-2 text-2xl font-bold">今日の運勢</h1>
+        <span className="mb-2 inline-block text-4xl">💗</span>
+        <h1 className="text-shimmer mb-2 text-2xl font-bold">今日の恋愛運</h1>
         <p className="text-sm text-foreground/50">
-          12星座 ── あなたの今日の星の導き
+          12星座別 ── 今日の恋のチャンスをチェック
         </p>
         <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
       </div>

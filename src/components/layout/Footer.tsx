@@ -6,17 +6,17 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-4">
         <div className="flex flex-col items-center gap-4 text-center">
           <p className="text-shimmer text-sm font-bold tracking-wider">
-            星詠み占い
+            恋愛占いラボ
           </p>
           <nav className="flex gap-6 text-xs text-foreground/50">
             <Link href="/tarot" className="hover:text-gold-400 transition-colors">
-              タロット占い
+              あの人の気持ち
             </Link>
             <Link href="/daily" className="hover:text-gold-400 transition-colors">
-              今日の運勢
+              今日の恋愛運
             </Link>
             <Link href="/numerology" className="hover:text-gold-400 transition-colors">
-              数秘術
+              恋愛タイプ診断
             </Link>
             <Link href="/compatibility" className="hover:text-gold-400 transition-colors">
               相性診断
@@ -26,7 +26,7 @@ export default function Footer() {
             </Link>
           </nav>
           <p className="text-xs text-foreground/30">
-            &copy; {new Date().getFullYear()} 星詠み占い All rights reserved.
+            &copy; {new Date().getFullYear()} 恋愛占いラボ All rights reserved.
           </p>
           <p className="text-xs text-foreground/30">
             ※占い結果はエンターテインメントとしてお楽しみください。

@@ -9,7 +9,7 @@ interface NumerologyResultProps {
 }
 
 export default function NumerologyResult({ profile }: NumerologyResultProps) {
-  const shareText = `【数秘術】私のライフパスナンバーは「${profile.lifePathNumber}」\n${profile.title}\n\n星詠み占いで診断してみよう！`;
+  const shareText = `【恋愛タイプ診断】私の恋愛ナンバーは「${profile.lifePathNumber}」\n${profile.title}\n\n恋愛占いラボで恋愛タイプを診断💘`;
 
   return (
     <div className="animate-fade-in-up mx-auto max-w-lg space-y-6">

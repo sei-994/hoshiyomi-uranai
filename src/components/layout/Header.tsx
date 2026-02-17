@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "/tarot", label: "タロット占い" },
-  { href: "/daily", label: "今日の運勢" },
-  { href: "/numerology", label: "数秘術" },
+  { href: "/tarot", label: "あの人の気持ち" },
+  { href: "/daily", label: "今日の恋愛運" },
+  { href: "/numerology", label: "恋愛タイプ診断" },
   { href: "/compatibility", label: "相性診断" },
 ];
 
@@ -17,7 +17,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-mystic-700/30 bg-mystic-900/80 backdrop-blur-md">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <Link href="/" className="text-shimmer text-lg font-bold tracking-wider">
-          星詠み占い
+          恋愛占いラボ
         </Link>
 
         {/* Desktop nav */}

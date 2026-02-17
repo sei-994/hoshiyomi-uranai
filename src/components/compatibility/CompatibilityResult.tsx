@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function CompatibilityResult({ result, numberA, numberB }: Props) {
-  const shareText = `【相性診断】ライフパスナンバー ${numberA} × ${numberB} の相性は ${result.score}%！\n\n星詠み占いで相性を診断してみよう！`;
+  const shareText = `【恋愛相性診断】ナンバー ${numberA} × ${numberB} の恋愛相性は ${result.score}%！💕\n\n恋愛占いラボで気になるあの人との相性を診断💘`;
 
   return (
     <div className="animate-fade-in-up mx-auto max-w-lg space-y-6">

@@ -18,7 +18,7 @@ export default function FortuneResult({ fortune, zodiacId }: FortuneResultProps)
   const today = new Date();
   const dateStr = `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`;
 
-  const shareText = `【${dateStr} ${sign.nameJa}の運勢】\n総合運: ${"★".repeat(fortune.overall)}${"☆".repeat(5 - fortune.overall)}\nラッキーカラー: ${fortune.luckyColor}\n\n星詠み占いで今日の運勢をチェック！`;
+  const shareText = `【${dateStr} ${sign.nameJa}の恋愛運】\n恋愛運: ${"★".repeat(fortune.love)}${"☆".repeat(5 - fortune.love)}\n出会い運: ${"★".repeat(fortune.overall)}${"☆".repeat(5 - fortune.overall)}\n\n恋愛占いラボで今日の恋愛運をチェック💘`;
 
   return (
     <div className="animate-fade-in-up mx-auto max-w-lg">
@@ -26,7 +26,7 @@ export default function FortuneResult({ fortune, zodiacId }: FortuneResultProps)
       <div className="mb-6 text-center">
         <span className="text-4xl">{sign.symbol}</span>
         <h2 className="mt-2 text-lg font-bold text-gold-400">
-          {sign.nameJa}の今日の運勢
+          {sign.nameJa}の今日の恋愛運
         </h2>
         <p className="text-xs text-foreground/40">{dateStr}</p>
       </div>
@@ -40,11 +40,11 @@ export default function FortuneResult({ fortune, zodiacId }: FortuneResultProps)
 
       {/* Meters */}
       <div className="mb-6 space-y-3 rounded-2xl border border-mystic-700/30 bg-surface/80 p-5 backdrop-blur-sm">
-        <LuckMeter label="総合運" value={fortune.overall} />
         <LuckMeter label="恋愛運" value={fortune.love} color="bg-pink-400" />
-        <LuckMeter label="金運" value={fortune.money} color="bg-yellow-400" />
-        <LuckMeter label="仕事運" value={fortune.work} color="bg-blue-400" />
-        <LuckMeter label="健康運" value={fortune.health} color="bg-green-400" />
+        <LuckMeter label="出会い運" value={fortune.overall} />
+        <LuckMeter label="モテ運" value={fortune.money} color="bg-yellow-400" />
+        <LuckMeter label="告白運" value={fortune.work} color="bg-blue-400" />
+        <LuckMeter label="デート運" value={fortune.health} color="bg-green-400" />
       </div>
 
       {/* Lucky items */}

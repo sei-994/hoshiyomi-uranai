@@ -57,11 +57,11 @@ const luckyColors = [
 ];
 
 const shortMessages = [
-  ["控えめな一日。無理せずマイペースで🌿", "休息が大事な日。エネルギーを蓄えて💤"],
-  ["穏やかな流れ。小さな幸せを見つけて🍀", "コツコツが吉。焦らずいこう✨"],
-  ["安定した運気。いつも通りが一番◎", "バランスの良い一日🌈"],
-  ["良い流れ！積極的に動いて吉🌟", "チャンスの予感✨アンテナを張って👀"],
-  ["最高の一日！思い切って挑戦を🔥", "幸運に恵まれる日🌟大きな一歩を！"],
+  ["恋は少しお休みモード。自分磨きの日にして💅", "焦らないで。次のチャンスに備えよう🌙"],
+  ["さりげない優しさが好印象に🍀", "気になる人との距離が少し縮まるかも💭"],
+  ["自然体でいることがモテの秘訣◎", "あの人との会話が弾みそう✨"],
+  ["恋のチャンス到来！積極的に行動して💘", "あの人からの好意のサインを見逃さないで👀"],
+  ["最高の恋愛日和！告白成功率UP🔥", "運命の出会いがあるかも…心を開いて💕"],
 ];
 
 // ─── Twitter OAuth 1.0a (ライブラリ不要) ───
@@ -182,16 +182,16 @@ async function main() {
 
   // ランキング投稿
   const rankingTweet = [
-    `✨ ${m}/${d} 今日の運勢ランキング ✨`,
+    `💘 ${m}/${d} 今日の恋愛運ランキング 💘`,
     ``,
     `🥇 ${top3[0].symbol} ${top3[0].nameJa}`,
     `🥈 ${top3[1].symbol} ${top3[1].nameJa}`,
     `🥉 ${top3[2].symbol} ${top3[2].nameJa}`,
     ``,
-    `あなたの星座の運勢は…？`,
+    `あなたの恋愛運は…？💕`,
     `👉 ${siteUrl}/daily`,
     ``,
-    `#占い #今日の運勢 #星座占い`,
+    `#恋愛占い #恋愛運 #片思い #恋愛`,
   ].join("\n");
 
   await postTweet(rankingTweet);
@@ -207,16 +207,16 @@ async function main() {
   const msg = rng.pick(shortMessages[overall - 1]);
 
   const detailTweet = [
-    `${best.symbol} ${best.nameJa}さん、今日は最高の一日！`,
+    `${best.symbol} ${best.nameJa}さん、今日は恋愛運MAX💘`,
     ``,
-    `総合運: ${"★".repeat(overall)}${"☆".repeat(5 - overall)}`,
+    `恋愛運: ${"★".repeat(overall)}${"☆".repeat(5 - overall)}`,
     `ラッキーカラー: ${color}`,
     `${msg}`,
     ``,
-    `詳しい運勢はこちら👇`,
+    `詳しい恋愛運はこちら👇`,
     `${siteUrl}/daily`,
     ``,
-    `#${best.nameJa} #占い #今日の運勢`,
+    `#${best.nameJa} #恋愛占い #恋愛運 #片思い`,
   ].join("\n");
 
   await postTweet(detailTweet);

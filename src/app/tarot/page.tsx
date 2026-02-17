@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TarotDeck from "@/components/tarot/TarotDeck";
 
 export const metadata: Metadata = {
-  title: "タロット占い | 無料で本格三枚引き",
+  title: "あの人の気持ちタロット | 無料で本格三枚引き",
   description:
-    "大アルカナ22枚から3枚を選んで、過去・現在・未来を占います。完全無料の本格タロット占い。",
+    "気になるあの人は今あなたをどう思ってる？タロットカードが相手の本音・現在の気持ち・今後の展開を映し出します。完全無料。",
 };
 
 export default function TarotPage() {
@@ -13,9 +13,9 @@ export default function TarotPage() {
       {/* Hero */}
       <div className="mb-10 text-center">
         <span className="mb-2 inline-block text-4xl">🃏</span>
-        <h1 className="text-shimmer mb-2 text-2xl font-bold">タロット占い</h1>
+        <h1 className="text-shimmer mb-2 text-2xl font-bold">あの人の気持ちタロット</h1>
         <p className="text-sm text-foreground/50">
-          大アルカナ22枚 ── 三枚引きスプレッド
+          あの人の本音を3枚のカードが映し出す
         </p>
         <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
       </div>
